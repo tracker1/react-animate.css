@@ -142,7 +142,7 @@ export interface AnimatedProps {
   animateOnMount?: boolean;
 
   /**
-   * Child component(s) to display
+   * @hidden
    */
   children: Component[] | Component;
 }

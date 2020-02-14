@@ -14,6 +14,27 @@ const defaultProps: Partial<AnimatedProps> = {
   style: {}
 };
 
+const getState = ({
+  isVisible,
+  animationIn,
+  animationOut,
+  animationInDuration,
+  animationOutDuration,
+  animationInDelay,
+  animationOutDelay
+}) =>
+  isVisible
+    ? {
+        animation: animationIn,
+        duration: animationInDuration,
+        delay: animationInDelay
+      }
+    : {
+        animation: animationOut,
+        duration: animationOutDuration,
+        delay: animationOutDelay
+      };
+
 export const Animate: React.FunctionComponent<AnimatedProps> = ({
   children
 }: AnimatedProps) => (
