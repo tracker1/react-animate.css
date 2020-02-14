@@ -1,0 +1,40 @@
+{
+  "name": "@tracker1/react-animated-css",
+  "access": "public",
+  "version": "0.0.0",
+  "description": "React wrapper for animated-css written in TypeScript with minimal runtime dependencies.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tracker1/react-animated-css.git"
+  },
+  "keywords": [
+    "react",
+    "animate",
+    "animation",
+    "fadein",
+    "css"
+  ],
+  "author": "Michael J. Ryan <tracker1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tracker1/react-animated-css/issues"
+  },
+  "homepage": "https://github.com/tracker1/react-animated-css#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "react": "^16.12.0",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.3",
+    "typescript": "^3.7.5"
+  },
+  "distDependencies": {
+    "react": ">=16.8.0 <18.0.0"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "postbuild": "node scripts/postbuild.js"
+  },
+  "devDependencies": {}
+}
